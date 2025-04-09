@@ -71,6 +71,8 @@ if st.button('Predict'):
     risk_level = "High Risk" if prediction[1] > 0.5 else "Low Risk"
     st.info(f"Risk Level: {risk_level}")
 
+    # 临时注释掉SHAP可视化部分
+    """
     # SHAP值解释
     st.write("---")
     st.subheader("Model Interpretation")
@@ -104,6 +106,7 @@ if st.button('Predict'):
     
     # 显示特征重要性表格
     st.table(feature_importance)
+    """
 
 # 添加说明信息
 st.write("---")
