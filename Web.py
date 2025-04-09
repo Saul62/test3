@@ -137,3 +137,9 @@ st.sidebar.markdown("""
 - RR: Respiratory Rate (times/minute)
 - SBP: Systolic Blood Pressure (mmHg)
 """)
+
+# 添加一个兼容性检查
+import sys
+if sys.version_info.major == 3 and sys.version_info.minor >= 12:
+    import warnings
+    warnings.warn("当前使用 Python 3.12 或更高版本，可能会有兼容性问题")
